@@ -1,4 +1,4 @@
-const initialDate = new Date('2024-11-02')
+const initialDate = new Date('2024-11-02') //null
 
 
 function addWeek (date = new Date()) {

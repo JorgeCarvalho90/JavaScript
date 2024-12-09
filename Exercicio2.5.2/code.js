@@ -1,15 +1,15 @@
 const initialDate = new Date("2024-12-20")
-const daysToAdd = 7
+const daysToAdd = 3
 
 function addDays (date = new Date(), days) {
-    const resultDate = new Date(+date +days * 86400000)
+    const resultDate = new Date(+date + days * 86400000)
     return resultDate
 }
  
 
 function isFuture (date = new Date()){
     const today = new Date()
-    const isFutureDate = +date > +today
+    const isFutureDate = date > today
     return isFutureDate
 
 }
