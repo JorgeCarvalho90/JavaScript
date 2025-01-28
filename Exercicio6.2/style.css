@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container{
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+    position: relative;
+    /* display: flex; */
+    /* margin: auto; */
+}
+
+div{
+    padding-bottom: 20px;
+}
+
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+button{
+    padding: 1%;
+}
