@@ -1,0 +1,69 @@
+main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+body {
+    min-height: 0.9vh;
+}
+
+.loading {
+    display: 'flex';
+    width: '100%';
+    height: '100%';
+    justify-content: 'center';
+    align-items: 'center';
+
+    & h3 {
+
+    }
+}
+
+.status {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fff;
+
+    &.warning {
+        background-color: orange;
+    }
+
+    &.success {
+        background-color: green;
+    }
+
+    &.info {
+        background-color: blue;
+    }
+
+    &.error {
+        background-color: red;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #e0e0e0;
+  }

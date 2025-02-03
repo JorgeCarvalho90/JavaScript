@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encomendas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section style="margin-bottom: 1em">
+        <form>
+          <select name="currency">
+            <option value="EUR">Euro</option>
+            <option value="USD">Dólar</option>
+            <option value="GBP">Libra</option>
+          </select>
+          <div style="display: flex; flex-direction: column; margin: 1em 0">
+            <ul id="products-list"></ul>
+            <div>
+              <select id="products-list-select" name="productName"></select>
+              <input
+                name="productQuantity"
+                type="number"
+                min="0"
+                placeholder="Quantidade"
+              />
+              <button id="add-product" type="button">Adicionar produto</button>
+            </div>
+          </div>
+          <button id="submit-form" type="submit">Enviar encomenda</button>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Moeda</th>
+              <th>Estado</th>
+              <th>Produtos</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td id="total-orders"></td>
+              <td colspan="3"></td>
+              <td id="total-price"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>
