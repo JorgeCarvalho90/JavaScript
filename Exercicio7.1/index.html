@@ -13,8 +13,8 @@
     <table>
         <thead>
             <tr>
-                <th>Currency</th>
                 <th>ID</th>
+                <th>Currency</th>
                 <th>Status</th>
                 <th>Produtos</th>
                 <th>Value</th>
@@ -23,6 +23,24 @@
         <tbody>
         </tbody>
     </table>
+    <br>
+    <form>
+        <label for="currency_label" class="currency_label">Currency:</label><br>
+        <select name="currency_select" id="currency_select">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+        </select><br>
+        <label for="products_label" class="products_label">Products:</label><br>
+        <select name="products_select" id="products_select">
+        </select><br>
+        <label for="quantity" class="quantity">Quantity</label>
+        <input type="number" id="quantity_input" name="quantity_input" min="1" max="99" required><br><br>
+        <input type="submit" id="add_button" value="Add"><br><br>
+
+        <input type="submit" id="submit_button" value="Submit">
+      </form> <br>
+      <footer></footer>
     <script src="code.js">
     </script>
 </body>
